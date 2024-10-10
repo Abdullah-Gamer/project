@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Management | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Book a Trip</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to Travel Management</h1>
+        <p>Your one-stop solution for all your travel needs.</p>
+        <button onclick="openNewsletter()">Subscribe to Newsletter</button>
+    </header>
+
+    <!-- Popular Destinations Section -->
+    <section class="destinations-section">
+        <h2>Popular Destinations</h2>
+        <div class="destinations">
+            <div class="destination-card">
+                <img src="images/paris.jpg" alt="Paris">
+                <h3>Paris</h3>
+                <p>Starting at $899</p>
+                <button onclick="alert('Booked Paris!')">Book Now</button>
+            </div>
+            <div class="destination-card">
+                <img src="images/newyork.jpg" alt="New York">
+                <h3>New York</h3>
+                <p>Starting at $699</p>
+                <button onclick="alert('Booked New York!')">Book Now</button>
+            </div>
+            <div class="destination-card">
+                <img src="images/tokyo.jpg" alt="Tokyo">
+                <h3>Tokyo</h3>
+                <p>Starting at $999</p>
+                <button onclick="alert('Booked Tokyo!')">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mock Modal Popup for Newsletter -->
+    <div id="newsletterModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeNewsletter()">&times;</span>
+            <h2>Subscribe to our Newsletter</h2>
+            <form id="newsletter-form">
+                <label for="email">Email:</label>
+                <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Travel Management. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
